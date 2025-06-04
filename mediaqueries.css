@@ -1,0 +1,12 @@
+/* Mobile coding */
+/* This is a conditional where if the */
+/* screen is smaller than 1200px display none */
+/* or desktop nav desappears */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
