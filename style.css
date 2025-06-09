@@ -1,345 +1,102 @@
-/* General Styling */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-/* the * is a way to refer to the whole page */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-/* refering to all the html body */
-/* I downloaded a font from google fonts */
 body {
-  background-color: antiquewhite;
+  margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  background-color: #171d3e;
+  color: #f5effd;
 }
 
 p {
-  color: rgb(85, 85, 85);
-}
-
-/* Transition */
-
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* Desktop */
-
-nav,
-.nav-links {
-  display: flex;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
-
-/* rem is a kind of pixels, but slightly diff */
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-/* links styling  */
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-/* on hover */
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
-}
-
-/* targeting the logo */
-.logo {
-  font-size: 2rem;
-}
-
-/* when we hover the logo, the cursor changes */
-.logo:hover {
-  cursor: default;
-}
-
-/* hamburger menu */
-#hamburger-nav {
-  display: none;
-  /* so it doesn't show on the laptop */
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
+  background-color: #141325;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+  align-items: center;
+  padding: 1rem 3rem;
 }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #caf6fe;
 }
 
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: antiquewhite;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links li {
+nav ul {
   list-style: none;
-  /* to remove the bullet points */
+  display: flex;
+  gap: 2rem;
 }
 
-/* when we open our class */
-.menu-links.open {
-  max-height: 300px;
+nav ul li a {
+  text-decoration: none;
+  color: #f5effd;
+  font-weight: 500;
 }
 
-/* style each of the span childs in class */
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+nav ul li a:hover {
+  color: #caf6fe;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-.hamburger-icon span:nth-child(2) {
-  opacity: 1;
-}
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-/* SECTION STYLING */
 section {
-  padding: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-/* making sure things dont overlap eachother */
-
-.section-container {
-  display: flex;
-}
-
-/* PROFILE /PICTURE\ SECTION */
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .title {
-  font-size: 3rem;
   text-align: center;
+  font-size: 2.5rem;
+  color: #caf6fe;
+  margin-bottom: 2rem;
 }
 
-#socials-container {
+.section__pic-container,
+.section__pic-container_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.section__pic-container img,
+.section__pic-container_left img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+.about-arrow {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
 }
 
-/* ICONS */
-.icon {
-  cursor: pointer;
-  height: 2rem;
+.about-arrow img {
+  height: 50px;
 }
 
-/* BUTTONS */
-.btn-container {
+.experience-article-container {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: antiquewhite;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(250, 235, 215) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
-
-/* ABOUT SECTION  */
-
-#about {
-  position: relative;
-}
-
-.about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
+.experience-texts {
   flex: 1;
-  background: antiquewhite;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
+.experience-img {
+  flex: 1;
+  text-align: right;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/* EXPERIENCE  */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
+.experience-img img {
+  width: 200px;
+  border-radius: 1rem;
 }
