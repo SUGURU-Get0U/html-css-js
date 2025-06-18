@@ -1,0 +1,46 @@
+:root {
+  --azulescuro: #171d3e;
+  --azulComShadingPretoParaBackground: #141325;
+  --azulPorcelanatoParaContrasteBackground: #565a74;
+  --branco: #f5eff0;
+  --marromParaAsBordas: #64414a;
+  --pretoParaFontes: #050301;
+}
+
+body {
+  background-color: var(--azulPorcelanatoParaContrasteBackground);
+}
+* {
+  font-family: "Huninn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.web-heading {
+  background-image: url("./assets/rain-gif-header.gif");
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 2rem 3rem;
+}
+
+.logo_text {
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.navigation ol {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: right;
+}
