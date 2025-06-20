@@ -29,3 +29,33 @@ document.querySelectorAll(".details-container").forEach((card) => {
   card.style.transform = "translateY(30px)";
   observer.observe(card);
 });
+
+/* ABA DE CONTATOS */
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Simular envio do formulário
+  setTimeout(() => {
+    document.getElementById("successMessage").style.display = "block";
+    document.getElementById("contactForm").reset();
+
+    // Esconder mensagem de sucesso após 5 segundos
+    setTimeout(() => {
+      document.getElementById("successMessage").style.display = "none";
+    }, 5000);
+  }, 1000);
+});
+
+// Adicionar efeitos de foco nos inputs
+const inputs = document.querySelectorAll("input, textarea");
+inputs.forEach((input) => {
+  input.addEventListener("focus", function () {
+    this.parentElement.querySelector("label").style.color = "#667eea";
+  });
+
+  input.addEventListener("blur", function () {
+    if (!this.value) {
+      this.parentElement.querySelector("label").style.color = "#555";
+    }
+  });
+});
