@@ -13,32 +13,260 @@
     />
   </head>
   <body>
-    <header class="web-heading">
-      <a href="#" class="logo_text">ようこそ僕のポルチフォリオ!</a>
-    </header>
-    <nav class="navigation">
+    <section class="header-section">
+      <div class="web-heading">
+        <a href="#" class="logo_text">
+          <h1>ようこそ僕のポルチフォリオ</h1>
+        </a>
+      </div>
+      <div class="nav-bar">
+        <nav class="navigation">
+          <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="header-content">
+        <div class="header-main-content">
+          <div class="header-text">
+            <p>E AI! SOU</p>
+            <h2><strong>EDUARDO ELLWANGER</strong></h2>
+            <div class="socials-container">
+              <img
+                src="./assets/linked-icons/github-linkedicon.png"
+                alt="Github icon"
+                title="GitHub"
+              />
+              <img
+                src="./assets/linked-icons/linkedin-linkedicon.png"
+                alt="LinkedIn icon"
+                title="LinkedIn"
+              />
+              <img
+                src="./assets/linked-icons/twitter-linkedicon.png"
+                alt="Twitter icon"
+                title="Twitter"
+              />
+            </div>
+          </div>
+          <div class="header-image">
+            <img
+              src="./assets/Profile Pictures/eduardo2.jpeg"
+              alt="Eduardo Ellwanger"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <h2 class="title">Sobre Mim</h2>
+        <div class="text">
+          <p>
+            Comecei a brincar com computadores desde a infancia jogando jogos,
+            mas meu interece por programação e desenvolvimento veio por volta
+            dos 14 anos quando fiz meu curso de desenvolvimento de sistemas.
+          </p>
+          <button
+            class="btn resume-btn"
+            onclick="window.open('https://chess.com')"
+          >
+            Continue Lendo
+          </button>
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container about">
+              <div class="icon-placeholder">
+                <img
+                  src="./assets/Certification-logos/GatinhoFofinho_Semfundo_cerfiticado.png"
+                  alt="Experiência"
+                />
+              </div>
+              <h3>Experiência</h3>
+              <p>6 meses<br />Desenvolvimento Frontend</p>
+            </div>
+            <div class="details-container about">
+              <div class="icon-placeholder">
+                <img
+                  src="./assets/Certification-logos/gatinhoNerd_Semfundo_certificado.png"
+                  alt="Educação"
+                />
+              </div>
+              <h3>Escolaridade</h3>
+              <p>Ensino Superior<br />Cursando Ciências da Computação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-content">
+        <div class="sub-text">
+          <h3>Explore minha</h3>
+        </div>
+        <h2 class="title">Experiência</h2>
+        <div class="text">
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container experience">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML</h3>
+                      <p>Intermedíario</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CSS</h3>
+                      <p>Intermedíario</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaScript</h3>
+                      <p>Básico</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="details-container experience">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>PostgreSQL</h3>
+                      <p>Básico</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Node JS</h3>
+                      <p>Intermedíario</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/Certification-logos/normal_checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git</h3>
+                      <p>Intermedíario</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Explore Meus Trabalhos</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container experience color-container">
+            <div class="article-container">
+              <div class="project-img">🚀 Mc MOD</div>
+            </div>
+            <h2 class="project-title">Um mod do jogo minecraft</h2>
+            <div class="btn-container">
+              <button
+                class="btn project-btn"
+                onclick="window.open('https://github.com/SUGURU-Get0U/Jujutsu_mod', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container experience color-container">
+            <div class="article-container">
+              <div class="project-img">🐍 python auto</div>
+            </div>
+            <h2 class="project-title">Automatização em python</h2>
+            <div class="btn-container">
+              <button
+                class="btn project-btn"
+                onclick="window.open('https://github.com/SUGURU-Get0U/Jornada_Python', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container experience color-container">
+            <div class="article-container">
+              <div class="project-img">💻 CRUD api</div>
+            </div>
+            <h2 class="project-title">Aplicação Web FullStack</h2>
+            <div class="btn-container">
+              <button
+                class="btn project-btn"
+                onclick="window.open('https://github.com/SUGURU-Get0U/Amazon_2.0', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="moreProjects">
+        <a href="./pages/Projects.html" class="btn moreProjects-btn"
+          >Ver Mais Projetos</a
+        >
+      </div>
+    </section>
+
+    <!-- NAVEGAÇÃO FIXA -->
+    <nav class="navigation-fixed" id="fixedNav">
       <ol>
-        <li class="nav-link" href="#">About me</li>
-        <li class="nav-link" href="#">Main content</li>
-        <li class="nav-link" href="#">My projects</li>
-        <li class="nav-link" href="#">Contact me!</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ol>
     </nav>
-
-    <article class="d">
-      <header class="introduction-heading">
-        <div class="title-container">
-          <h1>こんにちわ!</h1>
-        </div>
-      </header>
-      <div class="text-container">
-        <p>
-          My name is <strong>Eduardo</strong>, and I'm 17! <br />
-          Open to job opportunities world wide <br />
-          Passionate about Japanese culture and building intuitive web sites and
-          digital expiriences
-        </p>
-      </div>
-    </article>
+    <script src="script.js"></script>
   </body>
 </html>
