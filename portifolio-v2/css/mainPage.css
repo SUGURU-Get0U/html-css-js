@@ -1,0 +1,86 @@
+:root {
+  --textColor: #333;
+  --background-light-white: rgb(226, 226, 226);
+  --background-dakrMode: #001414;
+  --buttonColor-lightmode: #14f7ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: var(--background-light-white);
+}
+
+.nav-bar {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-content {
+}
+
+.text-container h2 {
+  color: var(--textColor);
+  padding: 45px;
+  padding-bottom: 14px;
+}
+
+.text-container span {
+  color: var(--textColor);
+  padding: 45px;
+  padding-top: 14px;
+}
+
+/* .main-content button {
+  color: var(--buttonColor-lightmode);
+  background-color: var(--background-dakrMode);
+  padding: 0.25em 1em;
+  margin: 45px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: var(--buttonColor-lightmode) 0.125em solid;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.2em #fff7, 0 0 0.3em var(--buttonColor-lightmode);
+  box-shadow: inset 0 0 0.5em #fff7, 0 0 0.5em var(--buttonColor-lightmode);
+} */
+
+.main-content button {
+  color: #fff;
+  background-color: #31473a;
+  padding: 0.25em 1em;
+  margin: 45px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: #31473a 0.125em solid;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.2em #fff7, 0 0 0.3em #6ab187; /* Light green text shadow */
+  box-shadow: inset 0 0 0.5em #fff7, 0 0 0.5em #6ab187; /* Light green box shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.main-content button:hover {
+  background-color: #4a6d54; /* A slightly lighter shade on hover */
+  border-color: #4a6d54;
+  box-shadow: inset 0 0 0.5em #fff7, 0 0 0.5em #97bc62;
+}
