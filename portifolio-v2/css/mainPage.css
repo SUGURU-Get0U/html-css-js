@@ -3,6 +3,8 @@
   --background-light-white: rgb(226, 226, 226);
   --background-dakrMode: #001414;
   --buttonColor-lightmode: #14f7ff;
+  --textHeadingColors: #08e463;
+  --textSubColor: #0bc844;
 }
 
 * {
@@ -29,27 +31,61 @@ body {
   display: flex;
 }
 
+.nav-bar li label{
+  cursor: pointer;
+  align-items: center;
+}
+
+.nav-bar li svg{
+  align-items: center;
+}
+
+
 ul {
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  cursor:pointer;
 }
 
 .main-content {
+  margin-top:80px;  
 }
 
+.profile {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.profile img {
+  display: flex;
+  border-radius: 50px;
+  border: green solid 0.1em;
+}
+
+.text-container {
+  max-width: 600px;
+  height: 300px;
+  width: 100%;
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+
+}
 .text-container h2 {
-  color: var(--textColor);
-  padding: 45px;
-  padding-bottom: 14px;
+  color: var(--textHeadingColors);
+  text-shadow: 0 0 0.2em #fff7, 0 0 0.2em #6ab187;
+  
 }
 
 .text-container span {
-  color: var(--textColor);
-  padding: 45px;
-  padding-top: 14px;
+  color: var(--textSubColor);
+  text-shadow: 0 0 0.2em #fff7, 0 0 0.1em #6ab187;
+  
 }
 
 /* .main-content button {
@@ -65,12 +101,14 @@ ul {
   box-shadow: inset 0 0 0.5em #fff7, 0 0 0.5em var(--buttonColor-lightmode);
 } */
 
+.btn-view-container {
+  width: 50%;
+}
+
 .main-content button {
   color: #fff;
-  background-color: #31473a;
-  padding: 0.25em 1em;
-  margin: 45px;
-  margin-top: 20px;
+  background-color: #4a996b;
+  padding: 0.25em 0.5em;
   cursor: pointer;
   border: #31473a 0.125em solid;
   border-radius: 0.25em;
@@ -83,4 +121,17 @@ ul {
   background-color: #4a6d54; /* A slightly lighter shade on hover */
   border-color: #4a6d54;
   box-shadow: inset 0 0 0.5em #fff7, 0 0 0.5em #97bc62;
+}
+
+/* Links das redes sociais */
+.social-media {
+  position: fixed;
+  top: 354px;
+  right: 280px;
+  left: 263px;
+  bottom: 220px;
+}
+
+.social-media svg {
+  width: 25px;
 }
