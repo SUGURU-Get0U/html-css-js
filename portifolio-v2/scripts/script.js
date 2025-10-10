@@ -1,0 +1,1 @@
+let linksRedesSociais = ['github.com']
